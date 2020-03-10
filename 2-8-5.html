@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构伪类选择器</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            margin: 50px auto;
+            width: 400px;
+            list-style: none outside none;
+        }
+
+        li {
+            display: inline-block;
+            margin: 5px;
+            padding: 5px;
+            width: 50px;
+            height: 50px;
+            font: bold 30px/50px arial;
+            background: #000;
+            color: #fff;
+            border-radius: 50px;
+            text-align: center;
+        }
+
+        /* 不能有空格！！！ ul>li:first-child  */
+        ul>li:first-child {
+            background-color: green;
+        }
+
+        ul>li:last-child {
+            background-color: blue;
+        }
+
+        /* n >= 1 且括号内不能写 n * 3 或 3n，
+            只能写 n, 2n, 3n ...
+            n+2 代表从第二个元素开始渲染 /
+            所以 n+1 的效果竟然是和 n的效果是一样的！！
+            也可以写 even，odd 
+            
+            所以这个n的取值范围是真的恶心啊！
+            还是看书吧，图解CSS3核心技术P44
+            */
+        ul>li:nth-child(3) {
+            background-color: yellow;
+        }
+
+        /* 有混入非子元素时使用,
+            type 只计算父元素指定的子元素   
+            ul>li:nth-of-type(5) {
+            background-color: yellow;
+        } */
+
+        ul>li:nth-last-child(3) {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <!-- <div>222</div> -->
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+    </ul>
+</body>
+
+</html>

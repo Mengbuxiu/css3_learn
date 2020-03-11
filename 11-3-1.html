@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>translate() 函数</title>
+    <style type="text/css">
+        div {
+            width: 500px;
+            height: 300px;
+            margin: 30px auto;
+            position: relative;
+            background: coral;
+            background-size: 100% 100%;
+        }
+
+        div img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -35px;
+            margin-top: -50px;
+        }
+
+        div img:nth-child(1) {
+            opacity: .5;
+            z-index: 1;
+        }
+
+        div img:nth-child(2) {
+            opacity: 1;
+            z-index: 2;
+            transform: translate(100px, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="img/pocker.jpg" width="70px" height="100px" />
+        <img src="img/pocker.jpg" width="70px" height="100px" />
+    </div>
+</body>
+
+</html>

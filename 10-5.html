@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 渐变制作纹理图案</title>
+    <style type="text/css">
+        .patterns {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            box-shadow: 0 1px 8px #666;
+        }
+
+        .pt1 {
+            background-color: #eee;
+            background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black),
+                linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+            background-size: 60px 60px;
+            background-position: 0 0, 30px 30px;
+        }
+
+        .pt2 {
+            background:
+                linear-gradient(135deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px,
+                    #d9ecff 67px, #d9ecff 69px, transparent 69px),
+                linear-gradient(225deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px,
+                    #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+            background-color: #708090;
+            background-size: 64px 128px;
+        }
+
+        .pt3 {
+            background:
+                radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
+                radial-gradient(at 100% 100%, rgba(96, 16, 48, 0) 9px, #613 10px, rgba(96, 16, 48, 0) 11px),
+                #8a3;
+            background-size: 20px 20px;
+        }
+
+        .pt4 {
+            background-color: black;
+            background-image:
+                radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 40px),
+                radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 30px),
+                radial-gradient(white, rgba(255, 255, 255, .1) 2px, transparent 40px),
+                radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 30px);
+            background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+            background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+        }
+
+        .pt5 {
+            background-color: #026873;
+            background-image: linear-gradient(90deg, rgba(255, 255, 255, .07) 50%, transparent 50%),
+                linear-gradient(90deg, rgba(255, 255, 255, .13) 50%, transparent 50%),
+                linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, .17) 50%),
+                linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, .19) 50%);
+            background-size: 13px, 29px, 37px, 53px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="patterns pt5"></div>
+    <div class="patterns pt4"></div>
+    <div class="patterns pt3"></div>
+    <div class="patterns pt2"></div>
+    <div class="patterns pt1"></div>
+</body>
+
+</html>

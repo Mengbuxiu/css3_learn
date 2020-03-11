@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3线性渐变--自顶向底</title>
+    <style type="text/css" media="screen">
+        div {
+            width: 400px;
+            height: 150px;
+            border: 1px solid #666;
+            text-align: center;
+            font-weight: 900;
+            color: #fff;
+            margin: 10px auto;
+        }
+
+        .toTop {
+            background-image: linear-gradient(to top, orange, green);
+        }
+
+        .toTop-deg {
+            background-image: linear-gradient(0deg, orange, green);
+        }
+
+        .toTop-deg2 {
+            background-image: linear-gradient(360deg, orange, green);
+        }
+
+        .toTop-deg3 {
+            background-image: linear-gradient(-360deg, orange, green);
+        }
+
+        .toBottom {
+            background-image: linear-gradient(to bottom, orange, green);
+        }
+
+        .toBottom-deg {
+            background-image: linear-gradient(180deg, orange, green);
+        }
+
+        .toBottom-deg2 {
+            background-image: linear-gradient(-180deg, orange, green);
+        }
+
+        .toLeft {
+            background-image: linear-gradient(to left, orange, green, red, yellow, indigo, violet);
+        }
+
+        .toLeft-deg {
+            background-image: linear-gradient(-90deg, orange, green);
+        }
+
+        .toLeft-deg2 {
+            background-image: linear-gradient(270deg, orange, green);
+        }
+
+        .toRight {
+            background-image: linear-gradient(to right, orange, green);
+        }
+
+        .toRight-deg {
+            background-image: linear-gradient(90deg, orange, green);
+        }
+
+        .toRight-deg2 {
+            background-image: linear-gradient(-270deg, orange, green);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="toTop">to top</div>
+    <div class="toTop-deg">0 deg</div>
+    <div class="toTop-deg2">360 deg</div>
+    <div class="toTop-deg3">-360 deg</div>
+    <hr>
+    <div class="toBottom">to bottom</div>
+    <div class="toBottom-deg">180 deg</div>
+    <div class="toBottom-deg2">-180 deg</div>
+    <hr>
+    <div class="toBottom">to bottom</div>
+    <div class="toBottom-deg">180 deg</div>
+    <div class="toBottom-deg2">-180 deg</div>
+    <hr>
+    <div class="toLeft">to left</div>
+    <div class="toLeft-deg">-90 deg</div>
+    <div class="toLeft-deg2">270 deg</div>
+    <hr>
+    <div class="toRight">to right</div>
+    <div class="toRight-deg">90 deg</div>
+    <div class="toRight-deg2">-270 deg</div>
+</body>
+
+</html>

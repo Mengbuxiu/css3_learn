@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3制作旋转图标</title>
+    <style type="text/css">
+        #social-icons img,
+        #social-icons2 img {
+            width: 50px;
+            height: 50px;
+            transition: all 0.8s ease-in-out;
+        }
+
+        #social-icons img:hover {
+            transform: rotate(360deg) scale(1.2);
+        }
+
+        #social-icons2 img:hover {
+            transform: rotate(-360deg) scale(.7);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>顺时针旋转360放大1.2倍</h1>
+    <ul id="social-icons">
+        <li>
+            <a href="#">
+                <img src="img/1.png" />
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="img/2.jpg" />
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="img/3.jpg" />
+            </a>
+        </li>
+    </ul>
+    <hr>
+    <h1>逆时针旋转360缩小0.7倍</h1>
+    <ul id="social-icons2">
+        <li>
+            <a href="#">
+                <img src="img/1.png" />
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="img/2.jpg" />
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="img/3.jpg" />
+            </a>
+        </li>
+    </ul>
+</body>
+
+</html>
